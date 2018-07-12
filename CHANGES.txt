@@ -1,0 +1,4 @@
+v0.1dev, 12/07/2018 -- Initial version. Includes a base sampler class and a
+                       Metropolis sampling algorithm. There is a utility
+                       function for creating a Gaussian ball of initial 
+                       samples.
