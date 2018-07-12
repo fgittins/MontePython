@@ -5,6 +5,7 @@ Utility functions.
 
 from __future__ import (absolute_import, division, print_function, 
                         unicode_literals)
+
 import numpy as np
 
 def ball(p0, sigma, size=1):
