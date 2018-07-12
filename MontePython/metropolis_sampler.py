@@ -75,7 +75,15 @@ class MetropolisSampler(Sampler):
             The log-probability at the accepted position vector.        
         rstate : list
             The state of the random number generator.
+        
+        Notes
+        -----
+
+        If ``rstate`` is not provided the setting of the ``random_state``
+        will fail silently and use the initial ``random_state``.
         """
+        # This will fail silently if ``rstate=None`` and the initial
+        # ``random_state`` will be used
         self.random_state = rstate
 
         p = np.asarray(p)

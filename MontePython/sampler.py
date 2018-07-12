@@ -124,7 +124,7 @@ class Sampler(object):
         """
         if p0 is None:
             if self._last_run is None:
-                raise ValueError("Cannot have p0=None if run_mcmc has never "
+                raise ValueError("Cannot have p0=None if run has never "
                                  "been called.")
             p0 = self._last_run[0]
             if lnprob0 is None:
